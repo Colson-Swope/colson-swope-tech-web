@@ -1,16 +1,14 @@
-/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #0d0d0d;
-    color: #fff; /* Global text color */
+    color: #fff; 
 }
 
 .container {
@@ -62,7 +60,7 @@ nav ul li a:hover {
 
 .hero {
     height: 90vh;
-    background-image: url('home_background.jpg');
+    background-image: url('assets/home_background.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -71,14 +69,14 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
     margin-top: 30px;
-    position: relative; /* Ensure relative positioning for absolute children */
+    position: relative;  
 }
 
 .hero-content {
-    background-color: rgba(20, 20, 20, 0.884); /* Semi-transparent background */
-    padding: 30px;
+    background-color: rgb(20, 20, 20); 
+    padding: 50px;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -105,6 +103,8 @@ nav ul li a:hover {
     padding: 50px 0;
     background-color: #141414;
     color: white;
+    text-align: center;
+ 
 }
 
 .about h2 {
@@ -114,8 +114,9 @@ nav ul li a:hover {
 
 .services {
     padding: 50px 0;
-    background-color: #0d0d0d;
+    background-color: #000000;
     color: white;
+   
 }
 
 .services .service {
@@ -123,6 +124,10 @@ nav ul li a:hover {
     padding: 20px;
     background-color: #141414;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;  
+    align-items: flex;  
+    text-align: left; 
 }
 
 .services .service h3 {
@@ -139,4 +144,18 @@ footer {
     padding: 20px 0;
     background-color: #141414;
     color: #fff;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.button-1 {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
