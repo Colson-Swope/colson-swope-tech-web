@@ -8,45 +8,56 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Example Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home" onclick="showPage('home')">Home</a></li>
-                <li><a href="#about" onclick="showPage('about')">About</a></li>
-                <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Colson Swope</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="content">
-        <section id="home">
-            <h2>Home</h2>
-            <b>Welcome to the website of Colson Swope</b>
-        </section>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to My Personal Website</h2>
+                <p>I am a dedicated cybersecurity professional, committed to continuous learning since 2021.</p>
+                <br> 
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-        <section id="about" style="display:none;">
-            <h2>About</h2>
-            
-        </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello World Hello World.</p>
+        </div>
+    </section>
 
-        <section id="contact" style="display:none;">
-            <h2>Contact</h2>
-           
-        </section>
-    </main>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="service">
+                <h3>Project 1</h3>
+                <p>Hello World</p>
+            </div>
+            <div class="service">
+                <h3>Project 2</h3>
+                <p>Hello World</p>
+            </div>
+            <!-- If want to add more projects, expand here -->
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Colson Swope. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Colson Swope. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script>
-        function showPage(page) {
-            const sections = document.querySelectorAll('main section');
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(page).style.display = 'block';
-        }
-    </script>
 </body>
 </html>
