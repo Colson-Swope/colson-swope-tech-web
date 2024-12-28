@@ -382,12 +382,16 @@ a:hover, a:active, a:focus {
    About section              
 -----------------------------------------*/
 
+
 #about .about-img {
     background: url('../images/about-img.jpg') no-repeat;
 }
 
 #about .about-thumb,
 #about .skill-thumb {
+  padding: 22px 32px 32px 32px;
+}
+#about .cert-thumb {
   padding: 22px 32px 32px 32px;
 }
 
@@ -528,6 +532,12 @@ a:hover, a:active, a:focus {
 
 #contact .contact-form,
 #contact .contact-thumb {
+  padding: 22px 32px 22px 32px;
+  min-height: 75vh;
+}
+
+#contact .contact-thumb2 {
+  align-content: center;
   padding: 22px 32px 22px 32px;
   min-height: 75vh;
 }
@@ -703,3 +713,5 @@ footer {
     padding: 40px 0;
   }
 }
+
+
